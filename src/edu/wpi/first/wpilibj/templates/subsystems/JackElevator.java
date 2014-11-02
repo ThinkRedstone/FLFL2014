@@ -18,11 +18,10 @@ public class JackElevator extends Subsystem {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-
-    Relay r1, r2;
-    Talon door;
-    DigitalInput up, down;
-    DigitalInput open, closed;
+    private Relay r1, r2;
+    private Talon door;
+    private DigitalInput up, down;
+    private DigitalInput open, closed;
 
     public JackElevator(String name, int relay1Port, int realy2Port, int doorPort, int upPort, int downPort, int openPort, int closedPort) {
         super(name);
