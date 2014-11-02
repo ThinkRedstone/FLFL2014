@@ -12,16 +12,15 @@ import edu.wpi.first.wpilibj.templates.commands.CommandBase;
  * @author AtidSpikes
  */
 public class JackDown extends CommandBase {
-
+    
     public JackDown() {
-
+        requires(jack);
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-        requires(jack);
     }
 
     // Called repeatedly when this Command is scheduled to run
