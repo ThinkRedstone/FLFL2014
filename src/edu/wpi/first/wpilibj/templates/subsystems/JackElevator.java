@@ -12,7 +12,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
  *
- * @author AtidSpikes
+ * @author ThinkRedstone
  */
 public class JackElevator extends Subsystem {
 

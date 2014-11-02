@@ -4,7 +4,7 @@ import edu.wpi.first.wpilibj.templates.commands.CommandBase;
 
 /**
  *
- * @author bradmiller
+ * @author ThinkRedstone
  */
 public class DriveStraight extends CommandBase {
 

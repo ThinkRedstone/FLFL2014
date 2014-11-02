@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package constants;
+package edu.wpi.first.wpilibj.templates;
 
-public class Ports {
+public class RobotMap {
     public static final int LEFT_TALON_1 = 0;
     public static final int LEFT_TALON_2 = 0;
     public static final int RIGHT_TALON_1 = 0;

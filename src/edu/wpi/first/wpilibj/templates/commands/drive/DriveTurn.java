@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj.templates.commands.CommandBase;
 
 /**
  *
- * @author AtidSpikes
+ * @author Thinkredstone
  */
 public class DriveTurn extends CommandBase {
 
