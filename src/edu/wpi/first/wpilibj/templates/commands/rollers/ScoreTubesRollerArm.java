@@ -11,9 +11,9 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
  *
  * @author AtidSpikes
  */
-public class ScoreTubes extends CommandGroup {
+public class ScoreTubesRollerArm extends CommandGroup {
 
-    public ScoreTubes() {
+    public ScoreTubesRollerArm() {
         addParallel(new RollRollers());
         addSequential(new ArmUp());
         addSequential(new ReleaseTubes());

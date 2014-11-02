@@ -11,9 +11,9 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
  *
  * @author ThinkRedstone
  */
-public class ScoreTubes extends CommandGroup {
+public class ScoreTubesJack extends CommandGroup {
     
-    public ScoreTubes() {
+    public ScoreTubesJack() {
         addSequential(new JackUp());
         addSequential(new JackOpen());
         addSequential(new JackClose());
