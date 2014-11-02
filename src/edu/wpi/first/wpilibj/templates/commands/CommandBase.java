@@ -14,7 +14,9 @@ import edu.wpi.first.wpilibj.templates.subsystems.DriveTrain;
  * @author Author
  */
 import edu.wpi.first.wpilibj.templates.RobotMap;
+import edu.wpi.first.wpilibj.templates.subsystems.Arm;
 import edu.wpi.first.wpilibj.templates.subsystems.JackElevator;
+import edu.wpi.first.wpilibj.templates.subsystems.Rollers;
 
 public abstract class CommandBase extends Command {
 
@@ -22,6 +24,8 @@ public abstract class CommandBase extends Command {
     // Create a single static instance of all of your subsystems
     public static DriveTrain driveTrain = new DriveTrain("driveTrain", RobotMap.LEFT_TALON_1, RobotMap.LEFT_TALON_2, RobotMap.RIGHT_TALON_1, RobotMap.RIGHT_TALON_2);
     public static JackElevator jack = new JackElevator("jack", RobotMap.JACK_RELAY_1, RobotMap.JACK_REALY_2, RobotMap.JACK_DOOR, RobotMap.JACK_DI_UP, RobotMap.JACK_DI_DOWN, RobotMap.JACK_DI_OPEN, RobotMap.JACK_DI_CLOSED);
+    public static Arm arm = new Arm(RobotMap.ARM_PORT, RobotMap.ARM_UP, RobotMap.ARM_DOWM, "arm");
+    public static Rollers rollers = new Rollers("rollers", RobotMap.ROLLER_PORT1, RobotMap.ROLLER_PORT2, RobotMap.ROLLER_PORT3, RobotMap.ROLLER_PORT4);
 
     public static void init() {
         // This MUST be here. If the OI creates Commands (which it very likely
