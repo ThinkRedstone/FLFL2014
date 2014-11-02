@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.wpi.first.wpilibj.templates.commands.jack;
+package edu.wpi.first.wpilibj.templates.commands.rollers;
 
 import edu.wpi.first.wpilibj.templates.commands.CommandBase;
 
@@ -11,10 +11,10 @@ import edu.wpi.first.wpilibj.templates.commands.CommandBase;
  *
  * @author AtidSpikes
  */
-public class JackStop extends CommandBase {
+public class RollRollers extends CommandBase {
 
-    public JackStop() {
-        requires(jack);
+    public RollRollers() {
+        requires(rollers);
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
@@ -25,23 +25,22 @@ public class JackStop extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-
+        rollers.rockNroll();
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return true;
+        return false;
     }
 
     // Called once after isFinished returns true
     protected void end() {
-        jack.stop();
+        rollers.stop();
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-        //if you somehow manage...
         end();
     }
 }

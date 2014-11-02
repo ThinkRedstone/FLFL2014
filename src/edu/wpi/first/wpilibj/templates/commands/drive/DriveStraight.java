@@ -8,8 +8,6 @@ import edu.wpi.first.wpilibj.templates.commands.CommandBase;
  */
 public class DriveStraight extends CommandBase {
 
-
-
     public DriveStraight() {
         requires(driveTrain);
     }

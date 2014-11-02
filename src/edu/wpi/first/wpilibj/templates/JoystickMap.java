@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.templates.commands.drive.DriveTurn;
-import edu.wpi.first.wpilibj.templates.commands.jack.ScoreTubes;
+import edu.wpi.first.wpilibj.templates.commands.jack.ScoreTubesJack;
 
 /**
  *
@@ -17,9 +17,11 @@ import edu.wpi.first.wpilibj.templates.commands.jack.ScoreTubes;
  */
 public class JoystickMap {
 
-    Joystick driverJ = new Joystick(RobotMap.JOYSTICK);
-    Button turn = new JoystickButton(driverJ, 1);
-    Button scoreTubes = new JoystickButton(driverJ, 2);
+    static final Joystick driverJ = new Joystick(RobotMap.JOYSTICK);
+    static final Button turn = new JoystickButton(driverJ, 1);
+    static final Button scoreTubesJack = new JoystickButton(driverJ, 2);
+    static final Button pickTubes = new JoystickButton(driverJ, 3);
+    static final Button scoreTubesRollerArm = new JoystickButton(driverJ, 4);
 
     public double getDriverX() {
         return driverJ.getX();
