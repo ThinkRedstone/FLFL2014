@@ -14,12 +14,11 @@ import edu.wpi.first.wpilibj.templates.commands.CommandBase;
 public class DriveTurn extends CommandBase {
 
     public DriveTurn() {
-
+        requires(driveTrain);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-        requires(driveTrain);
     }
 
     // Called repeatedly when this Command is scheduled to run
